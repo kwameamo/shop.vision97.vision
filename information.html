@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>Information — Vision'97</title>
+</head>
+<body>
+    <div class="mobile-menu" id="mob-menu">
+        <div class="mobile-menu-inner">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="https://www.instagram.com/vision97.vision" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="menu-button" onclick="toggleNav()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Vision97LogoW.svg" alt="Vision'97 Logo" width="200px">
+            </a>
+        </div>
+        
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="information.html" class="active">Information</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="info-container">
+            <h1>Information</h1>
+            
+            <section class="info-section">
+                <h2>About Vision'97</h2>
+                <p>Vision'97 is a lifestyle brand focused on creating apparel that represents our vision for the future. Our products are designed in Ghana with attention to quality and detail.</p>
+                <p>Our mission is to create clothing that connects people and shares our positive outlook through distinctive designs and quality garments.</p>
+            </section>
+            
+            <section class="info-section">
+                <h2>Return Policy</h2>
+                <p>All sales are final.</p>
+                <p>No refunds or exchanges.</p>
+            </section>
+            
+            <section class="info-section">
+                <h2>Shipping & Processing</h2>
+                <p>We ship worldwide.</p>
+                <p>Please allow 7-10 business days to process orders.</p>
+                <p>Please allow 10-15 days to arrive once shipped.</p>
+                <p>Once your order is shipped, you will receive a tracking number via email.</p>
+                <p>We are not responsible for any lost or stolen packages.</p>
+            </section>
+            
+            <section class="info-section">
+                <h2>Contact</h2>
+                <p>If you have any questions regarding your order, please email <a href="mailto:info@vision97.vision">info@vision97.vision</a></p>
+                <p>For wholesale inquiries, please contact <a href="mailto:wholesale@vision97.vision">wholesale@vision97.vision</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>
+                <a href="https://discord.gg/r25ew3St" target="_blank"><i class="ti ti-brand-discord"></i></a>
+            </div>
+            <div class="footer-tagline">
+                <p>The Future's Clear.</p>
+            </div>
+            <div class="footer-links">
+                <a href="information.html">Information</a>
+                <a href="subscribe.html">Subscribe</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* Mobile Menu Toggle */
+        function toggleNav() {
+            const mobileMenu = document.getElementById('mob-menu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
