@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/ecwid-custom.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="72x72">
+    <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="114x114">
     <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?16866749&data_platform=code&data_date=2025-04-06" charset="utf-8"></script>
     <title>Store — Vision'97</title>
 </head>
@@ -14,72 +19,73 @@
     <div class="mobile-menu" id="mob-menu">
         <div class="mobile-menu-inner">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="https://wa.me/c/233200044821" target="_blank">Ghana Store</a></li>
                 <li><a href="information.html">Information</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
                 <li><a href="https://www.instagram.com/vision97.vision" target="_blank">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
             </ul>
         </div>
     </div>
-
     <header>
-        <div class="menu-button" onclick="toggleNav()">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-        </div>
-        
-        <div class="logo">
+        <div class="mobile-header">
+            <i class="menu-button" onclick="toggleNav()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </i>
             <a href="index.html">
-                <img src="images/Vision97LogoW.svg" alt="Vision'97 Logo" width="200px">
+                <img src="images/Vision97LogoW.svg" alt="" width="200px">
             </a>
+
+            <p>Bag</p>
         </div>
-        
-        <nav class="desktop-menu">
-            <ul>
-                <li><a href="store.html" class="active">Store</a></li>
-                <li><a href="lookbook.html">Lookbook</a></li>
-                <li><a href="information.html">Information</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-            </ul>
-        </nav>
+
+        <div class="desktop-header">
+            <div class="left-menu">
+                <ul>
+                    <li><a href="https://wa.me/c/233200044821" target="_blank">Ghana Store</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Vision97LogoW.svg" alt="" width="200px">
+                </a>
+            </div>
+
+            <div class="right-menu">
+                <ul>
+                    <li><a href="subscribe.html">Subscribe</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <div class="store-container">
-            <h1>Shop Vision'97</h1>
-            
-            <!-- Ecwid Store -->
-            <div id="my-store-16866749"></div>
-            <div>
-                <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-16866749");</script>
-            </div>
+    <div class="main-container">
+        <!-- Ecwid Store -->
+        <div id="my-store-16866749"></div>
+        <div>
+            <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-16866749");</script>
         </div>
-    </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
+        <footer>
+            <div class="social-icon">
                 <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>
+            </div>
+    
+            <p> <strong>The Future's Clear.</strong> </p>
+    
+            <div class="social-icon">
                 <a href="https://discord.gg/r25ew3St" target="_blank"><i class="ti ti-brand-discord"></i></a>
             </div>
-            <div class="footer-tagline">
-                <p>The Future's Clear.</p>
-            </div>
-            <div class="footer-links">
-                <a href="information.html">Information</a>
-                <a href="subscribe.html">Subscribe</a>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        /* Mobile Menu Toggle */
-        function toggleNav() {
-            const mobileMenu = document.getElementById('mob-menu');
-            mobileMenu.classList.toggle('active');
-        }
-    </script>
+        </footer>
+    </div>
+        
+<!-- SCRIPTS -->
+    <script src="scripts/mobile-menu_bag.js"></script>
 </body>
 </html>

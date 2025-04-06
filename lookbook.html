@@ -6,187 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link rel="stylesheet" href="styles/global.css">
-    <title>Lookbook — Vision'97</title>
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="72x72">
+    <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="114x114">
+    <title>2023 1st Qtr — Vision'97</title>
 </head>
 <body>
     <div class="mobile-menu" id="mob-menu">
         <div class="mobile-menu-inner">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="https://wa.me/c/233200044821" target="_blank">Ghana Store</a></li>
                 <li><a href="information.html">Information</a></li>
+                <li><a href="#">Lookbook</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
                 <li><a href="https://www.instagram.com/vision97.vision" target="_blank">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
             </ul>
         </div>
     </div>
-
     <header>
-        <div class="menu-button" onclick="toggleNav()">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-        </div>
-        
-        <div class="logo">
+        <div class="mobile-header">
+            <i class="menu-button" onclick="toggleNav()">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </i>
             <a href="index.html">
-                <img src="images/Vision97LogoW.svg" alt="Vision'97 Logo" width="200px">
+                <img src="images/Vision97LogoW.svg" alt="" width="200px">
             </a>
+
+            <p>Bag</p>
         </div>
-        
-        <nav class="desktop-menu">
-            <ul>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="lookbook.html" class="active">Lookbook</a></li>
-                <li><a href="information.html">Information</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-            </ul>
-        </nav>
+
+        <div class="desktop-header">
+            <div class="left-menu">
+                <ul>
+                    <li><a href="https://wa.me/c/233200044821" target="_blank">Ghana Store</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Vision97LogoW.svg" alt="" width="200px">
+                </a>
+            </div>
+
+            <div class="right-menu">
+                <ul>
+                    <li><a href="subscribe.html">Subscribe</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <div class="lookbook-container">
-            <h1>2023 1st Quarter Lookbook</h1>
-            <p class="lookbook-intro">Drag the images to rearrange them and create your own composition.</p>
-            
-            <div class="lookbook-gallery">
-                <!-- Placeholder images - replace with your actual lookbook images -->
-                <img src="images/2023_1st_Qtr/1.png" alt="Lookbook Image 1" class="gallery-photos" id="photo-1" draggable="true">
-                <img src="images/2023_1st_Qtr/2.png" alt="Lookbook Image 2" class="gallery-photos" id="photo-2" draggable="true">
-                <img src="images/2023_1st_Qtr/3.png" alt="Lookbook Image 3" class="gallery-photos" id="photo-3" draggable="true">
-                <img src="images/2023_1st_Qtr/4.png" alt="Lookbook Image 4" class="gallery-photos" id="photo-4" draggable="true">
-                <img src="images/2023_1st_Qtr/5.png" alt="Lookbook Image 5" class="gallery-photos" id="photo-5" draggable="true">
-                <img src="images/2023_1st_Qtr/6.png" alt="Lookbook Image 6" class="gallery-photos" id="photo-6" draggable="true">
-                <img src="images/2023_1st_Qtr/7.png" alt="Lookbook Image 7" class="gallery-photos" id="photo-7" draggable="true">
-                
-                <!-- Stickers/Accents -->
-                <img src="images/2023_1st_Qtr/Circle-1.png" alt="Circle 1" class="gallery-photos" id="photo-8" draggable="true">
-                <img src="images/2023_1st_Qtr/Circle-2.png" alt="Circle 2" class="gallery-photos" id="photo-9" draggable="true">
-                <img src="images/2023_1st_Qtr/Rectangle-1.png" alt="Rectangle 1" class="gallery-photos" id="photo-10" draggable="true">
+    <div class="main-container">
+        <div class="lookbook-wrapper">
+            <div class="gallery">
+                <img src="images/2023_1st_Qtr/1.png" alt="" class="gallery-photos" id="photo-1" draggable="true">
+                <img src="images/2023_1st_Qtr/2.png" alt="" class="gallery-photos" id="photo-2" draggable="true">
+                <img src="images/2023_1st_Qtr/3.png" alt="" class="gallery-photos" id="photo-3" draggable="true">
+                <img src="images/2023_1st_Qtr/4.png" alt="" class="gallery-photos" id="photo-4" draggable="true">
+                <img src="images/2023_1st_Qtr/5.png" alt="" class="gallery-photos" id="photo-5" draggable="true">
+                <img src="images/2023_1st_Qtr/6.png" alt="" class="gallery-photos" id="photo-6" draggable="true">
+                <img src="images/2023_1st_Qtr/7.png" alt="" class="gallery-photos" id="photo-7" draggable="true">
+
+                <!-- STICKERS -->
+                <img src="images/2023_1st_Qtr/Circle-1.png" alt="" class="gallery-photos" id="photo-8" draggable="true">
+                <img src="images/2023_1st_Qtr/Circle-2.png" alt="" class="gallery-photos" id="photo-9" draggable="true">
+                <img src="images/2023_1st_Qtr/Rectangle-1.png" alt="" class="gallery-photos" id="photo-10" draggable="true">
             </div>
         </div>
-    </main>
+    </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>
-                <a href="https://discord.gg/r25ew3St" target="_blank"><i class="ti ti-brand-discord"></i></a>
-            </div>
-            <div class="footer-tagline">
-                <p>The Future's Clear.</p>
-            </div>
-            <div class="footer-links">
-                <a href="information.html">Information</a>
-                <a href="subscribe.html">Subscribe</a>
-            </div>
+        <div class="social-icon">
+            <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>
+        </div>
+
+        <p> <strong>The Future's Clear.</strong> </p>
+
+        <div class="social-icon">
+            <a href="https://discord.gg/r25ew3St" target="_blank"><i class="ti ti-brand-discord"></i></a>
         </div>
     </footer>
-
-    <script>
-        /* Mobile Menu Toggle */
-        function toggleNav() {
-            const mobileMenu = document.getElementById('mob-menu');
-            mobileMenu.classList.toggle('active');
-        }
-
-        /* Draggable Gallery Items */
-        document.addEventListener('DOMContentLoaded', function() {
-            // Set initial positions
-            positionGalleryItems();
-            
-            // Make images draggable
-            const images = document.querySelectorAll('.gallery-photos');
-            let currentDraggedItem = null;
-            
-            images.forEach(img => {
-                // Set initial position
-                img.style.position = 'absolute';
-                
-                // Dragstart event
-                img.addEventListener('dragstart', function(e) {
-                    currentDraggedItem = img;
-                    e.dataTransfer.setData('text/plain', img.id);
-                    
-                    // Add dragging class
-                    img.classList.add('dragging');
-                    
-                    // Set drag image (transparent)
-                    const dragImage = document.createElement('div');
-                    dragImage.style.width = '0';
-                    dragImage.style.height = '0';
-                    document.body.appendChild(dragImage);
-                    e.dataTransfer.setDragImage(dragImage, 0, 0);
-                    setTimeout(() => document.body.removeChild(dragImage), 0);
-                });
-                
-                // Drag over event (prevent default to allow drop)
-                img.addEventListener('dragover', function(e) {
-                    e.preventDefault();
-                });
-                
-                // Drop event
-                img.addEventListener('drop', function(e) {
-                    e.preventDefault();
-                    // No action needed for this type of draggable
-                });
-                
-                // Dragend event
-                img.addEventListener('dragend', function(e) {
-                    // Update position to new coordinates
-                    const newX = e.clientX - (img.offsetWidth / 2);
-                    const newY = e.clientY - (img.offsetHeight / 2);
-                    
-                    // Keep within bounds of container
-                    const container = document.querySelector('.lookbook-container');
-                    const maxX = container.offsetWidth - img.offsetWidth;
-                    const maxY = container.offsetHeight - img.offsetHeight;
-                    
-                    const boundedX = Math.max(0, Math.min(newX, maxX));
-                    const boundedY = Math.max(80, Math.min(newY, maxY)); // Add top margin
-                    
-                    img.style.left = boundedX + 'px';
-                    img.style.top = boundedY + 'px';
-                    
-                    // Remove dragging class
-                    img.classList.remove('dragging');
-                });
-            });
-        });
         
-        /* Position gallery items */
-        function positionGalleryItems() {
-            // Define initial positions for desktop
-            const positions = {
-                'photo-1': { top: 120, left: 50 },
-                'photo-2': { top: 150, left: 300 },
-                'photo-3': { top: 100, left: 600 },
-                'photo-4': { top: 350, left: 100 },
-                'photo-5': { top: 400, left: 400 },
-                'photo-6': { top: 380, left: 700 },
-                'photo-7': { top: 600, left: 200 },
-                'photo-8': { top: 650, left: 500 },
-                'photo-9': { top: 580, left: 650 },
-                'photo-10': { top: 680, left: 800 }
-            };
-            
-            // For mobile, adjust positions
-            if (window.innerWidth <= 768) {
-                Object.keys(positions).forEach(key => {
-                    positions[key].left = positions[key].left / 2;
-                });
-            }
-            
-            // Apply positions
-            for (const id in positions) {
-                const element = document.getElementById(id);
-                if (element) {
-                    element.style.top = positions[id].top + 'px';
-                    element.style.left = positions[id].left + 'px';
-                }
-            }
-        }
-        
-        // Handle window resize
-        window.addEventListener('resize', positionGalleryItems);
-    </script>
+<!-- SCRIPTS -->
+    <script src="scripts/mobile-menu_bag.js"></script>
+    <script src="scripts/draggable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js"></script>
+</body>
+</html>
