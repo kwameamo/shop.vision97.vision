@@ -51,6 +51,28 @@
     font-weight: var(--typography-text-font-weight) !important;
     color: var(--color-text) !important;
     text-align: center !important;
+    background-color: transparent !important;
+}
+
+/* Products container */
+.ec-size .ec-store .grid__products {
+    background-color: transparent !important;
+}
+
+/* Product card content wrapper */
+.ec-size .ec-store .grid-product__wrap {
+    background-color: transparent !important;
+}
+
+/* Product card */
+.ec-size .ec-store .grid-product {
+    background-color: transparent !important;
+}
+
+/* Product content */
+.ec-size .ec-store .grid-product__content {
+    background-color: transparent !important;
+    padding-top: 10px !important;
 }
 
 /* Product price */
@@ -60,6 +82,8 @@
     font-size: 11px !important;
     text-align: center !important;
     margin-top: -5px !important;
+    color: var(--color-text) !important;
+    background-color: transparent !important;
 }
 
 /* Buttons */
