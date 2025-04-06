@@ -1,0 +1,125 @@
+/* Custom styles for Ecwid store integration */
+
+/* General store container */
+.ec-size .ec-store {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Headers and titles */
+.ec-size .ec-store .ec-store__content-wrapper h1,
+.ec-size .ec-store .ec-store__content-wrapper h2,
+.ec-size .ec-store .ec-store__content-wrapper h3,
+.ec-size .ec-store .ec-store__content-wrapper h4,
+.ec-size .ec-store .ec-store__content-wrapper h5,
+.ec-size .ec-store .ec-store__content-wrapper h6,
+.ec-size .ec-store .ec-store__content-wrapper .ec-header-h1,
+.ec-size .ec-store .ec-store__content-wrapper .ec-header-h2,
+.ec-size .ec-store .ec-store__content-wrapper .ec-header-h3,
+.ec-size .ec-store .ec-store__content-wrapper .ec-header-h4,
+.ec-size .ec-store .ec-store__content-wrapper .ec-header-h5,
+.ec-size .ec-store .ec-store__content-wrapper .ec-header-h6 {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+/* Product grid */
+.ec-size .ec-store .grid-product__wrap-inner {
+    background-color: var(--color-primary) !important;
+    border-radius: var(--border-radius) !important;
+    overflow: hidden !important;
+    transition: var(--transition) !important;
+}
+
+.ec-size .ec-store .grid-product__wrap-inner:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Product title */
+.ec-size .ec-store .grid-product__title-inner {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: var(--color-text) !important;
+}
+
+/* Product price */
+.ec-size .ec-store .grid-product__price {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+/* Buttons */
+.ec-size .ec-store .form-control__button,
+.ec-size .ec-store .form-control__button--medium {
+    background-color: var(--color-text) !important;
+    color: var(--color-primary) !important;
+    border-radius: var(--border-radius) !important;
+    border: none !important;
+    transition: var(--transition) !important;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+}
+
+.ec-size .ec-store .form-control__button:hover,
+.ec-size .ec-store .form-control__button--medium:hover {
+    background-color: #333 !important;
+}
+
+/* Category navigation */
+.ec-size .ec-store .ec-breadcrumbs {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+}
+
+.ec-size .ec-store .ec-breadcrumbs__link {
+    color: var(--color-text) !important;
+}
+
+/* Product details page */
+.ec-size .ec-store .product-details__product-title {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.ec-size .ec-store .product-details__product-price {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.ec-size .ec-store .product-details__product-description {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Cart */
+.ec-size .ec-store .ec-cart-item__title {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.ec-size .ec-store .ec-cart__body {
+    background-color: var(--color-primary) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+/* Checkout */
+.ec-size .ec-store .ec-cart-step__section-title {
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.ec-size .ec-store .form-control__input {
+    border-radius: var(--border-radius) !important;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .ec-size .ec-store .ec-product-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .ec-size .ec-store .ec-product-list {
+        grid-template-columns: 1fr !important;
+    }
+}

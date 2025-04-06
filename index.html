@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/ecwid-custom.css">
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?16866749&data_platform=code&data_date=2025-04-06" charset="utf-8"></script>
+    <title>Store — Vision'97</title>
+</head>
+<body>
+    <div class="mobile-menu" id="mob-menu">
+        <div class="mobile-menu-inner">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="https://www.instagram.com/vision97.vision" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="menu-button" onclick="toggleNav()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Vision97LogoW.svg" alt="Vision'97 Logo" width="200px">
+            </a>
+        </div>
+        
+        <nav class="desktop-menu">
+            <ul>
+                <li><a href="store.html" class="active">Store</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="store-container">
+            <h1>Shop Vision'97</h1>
+            
+            <!-- Ecwid Store -->
+            <div id="my-store-16866749"></div>
+            <div>
+                <script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-16866749");</script>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>
+                <a href="https://discord.gg/r25ew3St" target="_blank"><i class="ti ti-brand-discord"></i></a>
+            </div>
+            <div class="footer-tagline">
+                <p>The Future's Clear.</p>
+            </div>
+            <div class="footer-links">
+                <a href="information.html">Information</a>
+                <a href="subscribe.html">Subscribe</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* Mobile Menu Toggle */
+        function toggleNav() {
+            const mobileMenu = document.getElementById('mob-menu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
