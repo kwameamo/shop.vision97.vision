@@ -1,7 +1,7 @@
 // Ecwid shopping cart integration
 document.addEventListener('DOMEvent', function() {
     // Find all bag/cart links and add event listeners
-    const bagLinks = document.querySelectorAll('.right-menu a:contains("Store"), .mobile-header p:contains("BAG")');
+    const bagLinks = document.querySelectorAll('.right-menu a:contains("Store"), .mobile-header p:contains("Bag")');
     
     bagLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -29,11 +29,11 @@ function updateBagCount() {
                 // Update the cart count
                 if (cart && cart.productsQuantity > 0) {
                     bagLinks.forEach(link => {
-                        link.textContent = `BAG (${cart.productsQuantity})`;
+                        link.textContent = `Bag (${cart.productsQuantity})`;
                     });
                 } else {
                     bagLinks.forEach(link => {
-                        link.textContent = 'BAG';
+                        link.textContent = 'Bag';
                     });
                 }
             });
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const bagLinks = document.querySelectorAll('.mobile-header p, .right-menu li:last-child a');
     
     bagLinks.forEach(link => {
-        if (link.textContent.trim() === 'BAG') {
+        if (link.textContent.trim() === 'Bag') {
             link.style.cursor = 'pointer';
             
             link.addEventListener('click', function(e) {
