@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/ecwid-custom.css">
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="72x72">
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="114x114">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load Ecwid script first -->
     <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?16866749&data_platform=code&data_date=2025-04-06" charset="utf-8"></script>
     <style>
         /* Override Ecwid styles to ensure product text is visible and using Space Mono */
@@ -52,11 +55,10 @@
     <div class="mobile-menu" id="mob-menu">
         <div class="mobile-menu-inner">
             <ul>
-                <li><a href="information.html">INFORMATION</a></li>
-                <li><a href="lookbook.html">LOOKBOOK</a></li>
-                <li><a href="subscribe.html">SUBSCRIBE</a></li>
-                <li><a href="https://www.instagram.com/vision97.vision" target="_blank">INSTAGRAM</a></li>
-                <li><a href="https://www.x.com/vision97_ORIGIN" target="_blank">X</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="lookbook.html">Lookbook</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+                <li><a href="https://www.instagram.com/vision97.vision" target="_blank">Instagram</a></li>
             </ul>
         </div>
     </div>
@@ -70,14 +72,14 @@
                 <img src="images/Vision97LogoW.svg" alt="" width="200px">
             </a>
 
-            <p class="bag-link">BAG</p>
+            <p class="bag-link" style="cursor:pointer;" onclick="showEcwidCart()">Bag</p>
         </div>
 
         <div class="desktop-header">
             <div class="left-menu">
                 <ul>
-                    <li><a href="information.html">INFORMATION</a></li>
-                    <li><a href="lookbook.html">LOOKBOOK</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="lookbook.html">Lookbook</a></li>
                 </ul>
             </div>
 
@@ -89,8 +91,8 @@
 
             <div class="right-menu">
                 <ul>
-                    <li><a href="subscribe.html">SUBSCRIBE</a></li>
-                    <li><a href="#" class="bag-link">BAG</a></li>
+                    <li><a href="subscribe.html">Subscribe</a></li>
+                    <li><a href="#" class="bag-link" style="cursor:pointer;" onclick="showEcwidCart()">Bag</a></li>
                 </ul>
             </div>
         </div>
@@ -118,6 +120,44 @@
         
 <!-- SCRIPTS -->
     <script src="scripts/mobile-menu_bag.js"></script>
-    <script src="scripts/cart.js"></script>
+    
+    <!-- Direct Cart Function -->
+    <script type="text/javascript">
+        // Direct function to show cart
+        function showEcwidCart() {
+            if (typeof Ecwid !== 'undefined') {
+                Ecwid.openPage('cart');
+            } else if (typeof ecwid_open_page !== 'undefined') {
+                ecwid_open_page('cart');
+            }
+        }
+        
+        // Initialize Ecwid and update cart count
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Ecwid
+            if (typeof Ecwid != 'undefined') {
+                Ecwid.init();
+                
+                // Set up cart change listener
+                Ecwid.OnAPILoaded.add(function() {
+                    // Update cart count when cart changes
+                    Ecwid.OnCartChanged.add(function(cart) {
+                        const bagLinks = document.querySelectorAll('.bag-link');
+                        
+                        // Update bag text
+                        if (cart && cart.productsQuantity > 0) {
+                            bagLinks.forEach(link => {
+                                link.textContent = `Bag (${cart.productsQuantity})`;
+                            });
+                        } else {
+                            bagLinks.forEach(link => {
+                                link.textContent = 'Bag';
+                            });
+                        }
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
