@@ -116,6 +116,8 @@
 
     }
 
+    .product-grid-item {
+    }
 
     .product-image {
         background-color: var(--color-text);
