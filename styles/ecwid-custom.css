@@ -1,8 +1,8 @@
-/* Custom styles for Ecwid store integration - matching original Vision'97 design */
+/* Custom styles for Ecwid store integration - with Space Mono font */
 
 /* General store container */
 .ec-size .ec-store {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-size: 11px !important;
     background-color: transparent !important;
 }
@@ -20,7 +20,7 @@
 .ec-size .ec-store .ec-store__content-wrapper .ec-header-h4,
 .ec-size .ec-store .ec-store__content-wrapper .ec-header-h5,
 .ec-size .ec-store .ec-store__content-wrapper .ec-header-h6 {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
 }
 
@@ -46,7 +46,7 @@
 
 /* Product title */
 .ec-size .ec-store .grid-product__title-inner {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-size: 11px !important;
     font-weight: var(--typography-text-font-weight) !important;
     color: var(--color-text) !important;
@@ -77,7 +77,7 @@
 
 /* Product price */
 .ec-size .ec-store .grid-product__price {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
     font-size: 11px !important;
     text-align: center !important;
@@ -93,7 +93,7 @@
     color: var(--color-primary) !important;
     border-radius: 10px !important;
     border: none !important;
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-size: 11px !important;
 }
 
@@ -104,7 +104,7 @@
 
 /* Category navigation */
 .ec-size .ec-store .ec-breadcrumbs {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-size: 11px !important;
 }
 
@@ -114,26 +114,26 @@
 
 /* Product details page */
 .ec-size .ec-store .product-details__product-title {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
     font-size: 14px !important;
 }
 
 .ec-size .ec-store .product-details__product-price {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
     font-size: 11px !important;
 }
 
 .ec-size .ec-store .product-details__product-description {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-size: 11px !important;
     line-height: 2.14286 !important;
 }
 
 /* Cart */
 .ec-size .ec-store .ec-cart-item__title {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
     font-size: 11px !important;
 }
@@ -145,19 +145,19 @@
 
 /* Checkout */
 .ec-size .ec-store .ec-cart-step__section-title {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
 }
 
 .ec-size .ec-store .form-control__input {
     border-radius: 10px !important;
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
 }
 
 /* Ecwid pagination and elements */
 .ec-size .ec-store .ec-pager,
 .ec-size .ec-store .ec-store__content-wrapper {
-    font-family: 'Helvetica Neue', 'Inter', sans-serif !important;
+    font-family: 'Space Mono', monospace !important;
     font-size: 11px !important;
 }
 

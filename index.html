@@ -13,15 +13,17 @@
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="114x114">
     <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?16866749&data_platform=code&data_date=2025-04-06" charset="utf-8"></script>
     <style>
-        /* Override Ecwid styles to ensure product text is visible */
+        /* Override Ecwid styles to ensure product text is visible and using Space Mono */
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
             color: #000000 !important;
             background-color: transparent !important;
+            font-family: 'Space Mono', monospace !important;
         }
         
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount {
             color: #000000 !important;
             background-color: transparent !important;
+            font-family: 'Space Mono', monospace !important;
         }
         
         /* Force transparent background for containers */
@@ -36,6 +38,12 @@
         /* Make sure text content is visible against gray background */
         #my-store-16866749 {
             color: #000000;
+            font-family: 'Space Mono', monospace !important;
+        }
+        
+        /* Force Space Mono on all text elements */
+        html#ecwid_html body#ecwid_body .ec-size .ec-store * {
+            font-family: 'Space Mono', monospace !important;
         }
     </style>
     <title>Store — Vision'97</title>
@@ -62,7 +70,7 @@
                 <img src="images/Vision97LogoW.svg" alt="" width="200px">
             </a>
 
-            <p class="bag-link">Bag</p>
+            <p class="bag-link">BAG</p>
         </div>
 
         <div class="desktop-header">
