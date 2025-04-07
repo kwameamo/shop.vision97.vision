@@ -13,7 +13,6 @@
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="72x72">
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="114x114">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Load Ecwid script first -->
     <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?16866749&data_platform=code&data_date=2025-04-06" charset="utf-8"></script>
     <style>
         /* Override Ecwid styles to ensure product text is visible and using Space Mono */
@@ -74,7 +73,7 @@
                 <img src="images/Vision97LogoW.svg" alt="" width="200px">
             </a>
 
-            <p class="bag-link" style="cursor:pointer;" onclick="showEcwidCart()">Bag</p>
+            <p class="bag-link">Bag</p>
         </div>
 
         <div class="desktop-header">
@@ -123,44 +122,6 @@
         
 <!-- SCRIPTS -->
     <script src="scripts/mobile-menu_bag.js"></script>
-    
-    <!-- Direct Cart Function -->
-    <script type="text/javascript">
-        // Direct function to show cart
-        function showEcwidCart() {
-            if (typeof Ecwid !== 'undefined') {
-                Ecwid.openPage('cart');
-            } else if (typeof ecwid_open_page !== 'undefined') {
-                ecwid_open_page('cart');
-            }
-        }
-        
-        // Initialize Ecwid and update cart count
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize Ecwid
-            if (typeof Ecwid != 'undefined') {
-                Ecwid.init();
-                
-                // Set up cart change listener
-                Ecwid.OnAPILoaded.add(function() {
-                    // Update cart count when cart changes
-                    Ecwid.OnCartChanged.add(function(cart) {
-                        const bagLinks = document.querySelectorAll('.bag-link');
-                        
-                        // Update bag text
-                        if (cart && cart.productsQuantity > 0) {
-                            bagLinks.forEach(link => {
-                                link.textContent = `Bag (${cart.productsQuantity})`;
-                            });
-                        } else {
-                            bagLinks.forEach(link => {
-                                link.textContent = 'Bag';
-                            });
-                        }
-                    });
-                });
-            }
-        });
-    </script>
+    <script src="scripts/cart.js"></script>
 </body>
 </html>
