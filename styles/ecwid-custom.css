@@ -20,7 +20,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
     font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-text-font-weight) !important;
     color: var(--color-text) !important;
-    text-align: center !important;
+    text-align: left !important;
     background-color: transparent !important;
 }
 
