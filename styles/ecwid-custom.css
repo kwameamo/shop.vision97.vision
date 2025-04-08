@@ -29,6 +29,11 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__info {
     background-color: transparent !important;
 }
 
+/* Products container */
+.ec-size .ec-store .grid__products {
+    background-color: transparent !important;
+}
+
 /* Product prices - force high contrast */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
@@ -114,17 +119,37 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store * {
 }
 
 /* Product images */
-html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
-    background-color: var(--color-text) !important;
+/* html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
+    background-color: transparent !important;
     border-radius: 10px !important;
     margin-bottom: 15px !important;
+} */
+
+/* Product images */
+.ec-size .ec-store .grid__products .grid-product__image-wrap {
+    margin-bottom: 0 !important;
+}
+
+.ec-size .ec-store .grid__products .grid-product__title-inner {
+    margin-top: 1em !important;
 }
 
 /* Grid layout */
-html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
+/* html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 30px !important;
     margin-bottom: 20px !important;
+} */
+
+/* Product grid */
+.ec-size .ec-store .grid-product__wrap-inner {
+    background-color: transparent !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    aspect-ratio: 4/5 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 /* Checkout Color Fixes for Vision'97 */
