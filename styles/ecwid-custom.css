@@ -49,7 +49,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
     font-weight: var(--typography-primary-font-weight) !important;
     font-size: 11px !important;
     text-align: left !important;
-    margin-top: -5px !important;
+    /* margin-top: -5px !important; */
     color: var(--color-text) !important;
     background-color: transparent !important;
 }
@@ -119,30 +119,37 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store * {
 }
 
 /* Product images */
-/* html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
     background-color: transparent !important;
     border-radius: 10px !important;
     margin-bottom: 15px !important;
-} */
+}
 
 /* Product images */
-.ec-size .ec-store .grid__products .grid-product__image-wrap {
+/* .ec-size .ec-store .grid__products .grid-product__image-wrap {
     margin-bottom: 0 !important;
 }
 
 .ec-size .ec-store .grid__products .grid-product__title-inner {
     margin-top: 1em !important;
-}
+} */
 
 /* Grid layout */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
     grid-template-columns: repeat(3, 1fr) !important;
-    grid-gap: 30px !important;
+    aspect-ratio: 4/5 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* grid-gap: 30px !important; */
     margin-bottom: 20px !important;
+    background-color: transparent !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
 }
 
 /* Product grid */
-.ec-size .ec-store .grid-product__wrap-inner {
+/* .ec-size .ec-store .grid-product__wrap-inner {
     background-color: transparent !important;
     border-radius: 10px !important;
     overflow: hidden !important;
@@ -150,7 +157,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-}
+} */
 
 /* Checkout Color Fixes for Vision'97 */
 
