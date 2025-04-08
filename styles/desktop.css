@@ -155,8 +155,8 @@
        padding: 1em;
        width: 40%;
        height: fit-content;
-       outline: 2px solid var(--color-text);
-       border-radius: 10px;
+       /* outline: 2px solid var(--color-text); */
+       /* border-radius: 10px; */
        color: var(--color-text);
    }
  
@@ -174,8 +174,8 @@
  
    .subscribe-two .sub-form form input[type=email], .sub-form form input[type=text] {
        background-color: transparent;
-       border: solid 2px var(--color-text);
-       border-radius: 10px;
+       /* border: solid 2px var(--color-text); */
+       /* border-radius: 10px; */
        outline: none;
        color: var(--color-text);
        padding: 0 .5em;

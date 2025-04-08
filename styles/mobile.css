@@ -204,7 +204,7 @@
         width: 80%;
         height: fit-content;
     
-        outline: 2px solid var(--color-text);
+        /* outline: 2px solid var(--color-text); */
         border-radius: 10px;
     
         color: var(--color-text);
