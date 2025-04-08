@@ -127,19 +127,25 @@
    }
  
    .info-wrapper, .sub-wrapper {
-       display: block;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       text-align: left;
-       line-height: 15px;
-       padding: 7em 0;
-   }
- 
-   .info-wrapper a, .sub-wrapper a {
-       color: var(--color-text);
-   }
- 
+    display: block;
+    text-align: left;
+    line-height: 15px;
+    padding: 9em 0 7em 0;         /* Increased top padding */
+    width: 600px;                 /* Fixed width for better readability */
+    margin: 0 auto;               /* Center the wrapper */
+    }
+
+    .info-wrapper p {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0;             /* Remove default margin */
+    }
+
+    .info-wrapper a, .sub-wrapper a {
+        color: var(--color-text);
+        text-decoration: none;
+    }
+    
    .subscribe-two {
        display: flex;
        flex-direction: column;

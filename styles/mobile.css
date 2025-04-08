@@ -173,15 +173,23 @@
     .info-wrapper, .sub-wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;  /* Changed from center */
+        align-items: flex-start;      /* Changed from center */
         text-align: left;
         line-height: 15px;
-        padding: 7em 0;
+        padding: 9em 0 7em 0;         /* Increased top padding */
+        width: 85%;                   /* Set width for container */
+        margin: 0 auto;               /* Center the wrapper */
     }
     
-    .info-wrapper a, .sub-wrapper a{
+    .info-wrapper p {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .info-wrapper a, .sub-wrapper a {
         color: var(--color-text);
+        text-decoration: none;
     }
 
     .subscribe-two {
