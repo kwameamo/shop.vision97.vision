@@ -137,7 +137,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
 /* Grid layout */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
     grid-template-columns: repeat(3, 1fr) !important;
-    aspect-ratio: 4/5 !important;
+    /* aspect-ratio: 4/5 !important; */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
