@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/ecwid-custom.css">
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="72x72">
     <link rel="apple-touch-icon" href="images/Vision97LogoSQ1.jpg" sizes="114x114">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load Ecwid script first -->
     <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?16866749&data_platform=code&data_date=2025-04-06" charset="utf-8"></script>
     <style>
-        /* Override Ecwid styles to ensure product text is visible */
+        /* Override Ecwid styles to ensure product text is visible and using Space Mono */
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
             color: #000000 !important;
             background-color: transparent !important;
+            font-family: 'Space Mono', monospace !important;
         }
         
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount {
             color: #000000 !important;
             background-color: transparent !important;
+            font-family: 'Space Mono', monospace !important;
         }
         
         /* Force transparent background for containers */
@@ -36,6 +41,12 @@
         /* Make sure text content is visible against gray background */
         #my-store-16866749 {
             color: #000000;
+            font-family: 'Space Mono', monospace !important;
+        }
+        
+        /* Force Space Mono on all text elements */
+        html#ecwid_html body#ecwid_body .ec-size .ec-store * {
+            font-family: 'Space Mono', monospace !important;
         }
     </style>
     <title>Store — Vision'97</title>
@@ -44,12 +55,13 @@
     <div class="mobile-menu" id="mob-menu">
         <div class="mobile-menu-inner">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://wa.me/c/233200044821" target="_blank">Ghana Store</a></li>
-                <li><a href="information.html">Information</a></li>
-                <li><a href="lookbook.html">Lookbook</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-                <li><a href="https://www.instagram.com/vision97.vision" target="_blank">Instagram</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="information.html">INFORMATION</a></li>
+                <li><a href="lookbook.html">LOOKBOOK</a></li>
+                <li><a href="subscribe.html">SUBSCRIBE</a></li>
+                <li><a href="https://www.instagram.com/vision97.vision" target="_blank">INSTAGRAM</a></li>
+                <li><a href="https://x.com/VISION97_ORIGIN/" target="_blank">X</a></li>
             </ul>
         </div>
     </div>
@@ -63,15 +75,14 @@
                 <img src="images/Vision97LogoW.svg" alt="" width="200px">
             </a>
 
-            <p class="bag-link">Bag</p>
+            <p class="bag-link" style="cursor:pointer;">BAG</p>
         </div>
 
         <div class="desktop-header">
             <div class="left-menu">
                 <ul>
-                    <li><a href="https://wa.me/c/233200044821" target="_blank">Ghana Store</a></li>
-                    <li><a href="information.html">Information</a></li>
-                    <li><a href="lookbook.html">Lookbook</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                    <li><a href="lookbook.html">LOOKBOOK</a></li>
                 </ul>
             </div>
 
@@ -83,8 +94,8 @@
 
             <div class="right-menu">
                 <ul>
-                    <li><a href="subscribe.html">Subscribe</a></li>
-                    <li><a href="#" class="bag-link">Bag</a></li>
+                    <li><a href="subscribe.html">SUBSCRIBE</a></li>
+                    <li><a href="#" class="bag-link" style="cursor:pointer;">BAG</a></li>
                 </ul>
             </div>
         </div>
@@ -112,6 +123,5 @@
         
 <!-- SCRIPTS -->
     <script src="scripts/mobile-menu_bag.js"></script>
-    <script src="scripts/cart.js"></script>
 </body>
 </html>

@@ -11,6 +11,10 @@ html {
     -webkit-tap-highlight-color: rgb(29 30 33);
 }
 
+html.no-scroll {
+    overflow: hidden;
+}
+
 :root {
     --color-primary: #fff;
     --color-secondary: #8d8d8d;
@@ -53,4 +57,9 @@ body, button, input, select, textarea {
 .draggable {
     touch-action: none;
     user-select: none;
+}
+
+/* Text transforms for menus */
+.left-menu a, .right-menu a, .mobile-menu a {
+    text-transform: uppercase;
 }
