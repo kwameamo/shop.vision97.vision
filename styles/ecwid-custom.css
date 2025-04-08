@@ -1,4 +1,4 @@
-/* Custom styles for Ecwid store integration - with Space Mono font */
+/* Enhanced Ecwid customization for transparent checkout and better visibility */
 
 /* General store container */
 .ec-size .ec-store {
@@ -7,165 +7,109 @@
     background-color: transparent !important;
 }
 
-/* Headers and titles */
-.ec-size .ec-store .ec-store__content-wrapper h1,
-.ec-size .ec-store .ec-store__content-wrapper h2,
-.ec-size .ec-store .ec-store__content-wrapper h3,
-.ec-size .ec-store .ec-store__content-wrapper h4,
-.ec-size .ec-store .ec-store__content-wrapper h5,
-.ec-size .ec-store .ec-store__content-wrapper h6,
-.ec-size .ec-store .ec-store__content-wrapper .ec-header-h1,
-.ec-size .ec-store .ec-store__content-wrapper .ec-header-h2,
-.ec-size .ec-store .ec-store__content-wrapper .ec-header-h3,
-.ec-size .ec-store .ec-store__content-wrapper .ec-header-h4,
-.ec-size .ec-store .ec-store__content-wrapper .ec-header-h5,
-.ec-size .ec-store .ec-store__content-wrapper .ec-header-h6 {
+/* Product titles - force high contrast */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
+    color: #000000 !important;
+    background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
-    font-weight: var(--typography-primary-font-weight) !important;
+    font-weight: 700 !important;
 }
 
-/* Product grid */
-.ec-size .ec-store .grid-product__wrap-inner {
-    background-color: var(--color-text) !important;
-    border-radius: 10px !important;
-    overflow: hidden !important;
-    aspect-ratio: 4/5 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+/* Ensure product info container is transparent */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__info {
+    background-color: transparent !important;
+}
+
+/* Product prices - force high contrast */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
+    color: #000000 !important;
+    background-color: transparent !important;
+    font-family: 'Space Mono', monospace !important;
+    font-weight: 700 !important;
+}
+
+/* Force transparent background for all containers */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-store__content-wrapper,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__wrap,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__content {
+    background-color: transparent !important;
+}
+
+/* Product hover states */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product:hover,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product:hover .grid-product__content,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products .grid-product:hover {
+    background-color: transparent !important;
+}
+
+/* Checkout process - make all backgrounds transparent */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__container,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__title,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__form,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__footer,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__summary,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__body {
+    background-color: transparent !important;
+}
+
+/* Cart containers */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__container,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__body,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__body-inner {
+    background-color: transparent !important;
+}
+
+/* Form elements */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__input,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__select,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__textarea {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid #000000 !important;
+    font-family: 'Space Mono', monospace !important;
+}
+
+/* Cart items */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item__wrap,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item__title {
+    background-color: transparent !important;
+    color: #000000 !important;
+}
+
+/* Ensure all text is high contrast against gray background */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-text,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-heading {
+    color: #000000 !important;
+}
+
+/* Force Space Mono on all text elements */
+html#ecwid_html body#ecwid_body .ec-size .ec-store * {
+    font-family: 'Space Mono', monospace !important;
 }
 
 /* Product images */
-.ec-size .ec-store .grid__products .grid-product__image-wrap {
-    margin-bottom: 0 !important;
-}
-
-.ec-size .ec-store .grid__products .grid-product__title-inner {
-    margin-top: 1em !important;
-}
-
-/* Product title */
-.ec-size .ec-store .grid-product__title-inner {
-    font-family: 'Space Mono', monospace !important;
-    font-size: 11px !important;
-    font-weight: var(--typography-text-font-weight) !important;
-    color: var(--color-text) !important;
-    text-align: center !important;
-    background-color: transparent !important;
-}
-
-/* Products container */
-.ec-size .ec-store .grid__products {
-    background-color: transparent !important;
-}
-
-/* Product card content wrapper */
-.ec-size .ec-store .grid-product__wrap {
-    background-color: transparent !important;
-}
-
-/* Product card */
-.ec-size .ec-store .grid-product {
-    background-color: transparent !important;
-}
-
-/* Product content */
-.ec-size .ec-store .grid-product__content {
-    background-color: transparent !important;
-    padding-top: 10px !important;
-}
-
-/* Product price */
-.ec-size .ec-store .grid-product__price {
-    font-family: 'Space Mono', monospace !important;
-    font-weight: var(--typography-primary-font-weight) !important;
-    font-size: 11px !important;
-    text-align: center !important;
-    margin-top: -5px !important;
-    color: var(--color-text) !important;
-    background-color: transparent !important;
-}
-
-/* Buttons */
-.ec-size .ec-store .form-control__button,
-.ec-size .ec-store .form-control__button--medium {
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
     background-color: var(--color-text) !important;
-    color: var(--color-primary) !important;
     border-radius: 10px !important;
-    border: none !important;
-    font-family: 'Space Mono', monospace !important;
-    font-size: 11px !important;
+    margin-bottom: 15px !important;
 }
 
-.ec-size .ec-store .form-control__button:hover,
-.ec-size .ec-store .form-control__button--medium:hover {
-    opacity: 0.9 !important;
-}
-
-/* Category navigation */
-.ec-size .ec-store .ec-breadcrumbs {
-    font-family: 'Space Mono', monospace !important;
-    font-size: 11px !important;
-}
-
-.ec-size .ec-store .ec-breadcrumbs__link {
-    color: var(--color-text) !important;
-}
-
-/* Product details page */
-.ec-size .ec-store .product-details__product-title {
-    font-family: 'Space Mono', monospace !important;
-    font-weight: var(--typography-primary-font-weight) !important;
-    font-size: 14px !important;
-}
-
-.ec-size .ec-store .product-details__product-price {
-    font-family: 'Space Mono', monospace !important;
-    font-weight: var(--typography-primary-font-weight) !important;
-    font-size: 11px !important;
-}
-
-.ec-size .ec-store .product-details__product-description {
-    font-family: 'Space Mono', monospace !important;
-    font-size: 11px !important;
-    line-height: 2.14286 !important;
-}
-
-/* Cart */
-.ec-size .ec-store .ec-cart-item__title {
-    font-family: 'Space Mono', monospace !important;
-    font-weight: var(--typography-primary-font-weight) !important;
-    font-size: 11px !important;
-}
-
-.ec-size .ec-store .ec-cart__body {
-    background-color: var(--color-primary) !important;
-    border-radius: 10px !important;
-}
-
-/* Checkout */
-.ec-size .ec-store .ec-cart-step__section-title {
-    font-family: 'Space Mono', monospace !important;
-    font-weight: var(--typography-primary-font-weight) !important;
-}
-
-.ec-size .ec-store .form-control__input {
-    border-radius: 10px !important;
-    font-family: 'Space Mono', monospace !important;
-}
-
-/* Ecwid pagination and elements */
-.ec-size .ec-store .ec-pager,
-.ec-size .ec-store .ec-store__content-wrapper {
-    font-family: 'Space Mono', monospace !important;
-    font-size: 11px !important;
+/* Grid layout */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 30px !important;
+    margin-bottom: 20px !important;
 }
 
 /* Mobile adjustments */
 @media only screen and (max-width: 768px) {
-    .ec-size .ec-store .grid__products {
-        grid-template-columns: repeat(1, 1fr) !important;
-        grid-column-gap: 20px !important;
-        grid-row-gap: 20px !important;
+    html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
+        grid-template-columns: 1fr !important;
     }
 }
