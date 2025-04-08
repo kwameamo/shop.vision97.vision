@@ -12,7 +12,8 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
     color: #000000 !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
+    font-size: 10px !important;
 }
 
 /* Product title */
@@ -22,6 +23,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
     color: var(--color-text) !important;
     text-align: left !important;
     background-color: transparent !important;
+    font-weight: 400 !important;
 }
 
 /* Ensure product info container is transparent */
@@ -40,18 +42,19 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
     color: #000000 !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
 }
 
 /* Product price */
 .ec-size .ec-store .grid-product__price {
     font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
-    font-size: 11px !important;
+    font-size: 10px !important;
     text-align: left !important;
     /* margin-top: -5px !important; */
     color: var(--color-text) !important;
     background-color: transparent !important;
+    font-weight: 400 !important;
 }
 
 /* Force transparent background for all containers */
