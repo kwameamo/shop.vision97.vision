@@ -15,6 +15,15 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
     font-weight: 700 !important;
 }
 
+/* Product title */
+.ec-size .ec-store .grid-product__title-inner {
+    font-family: 'Space Mono', monospace !important;
+    font-weight: var(--typography-text-font-weight) !important;
+    color: var(--color-text) !important;
+    text-align: center !important;
+    background-color: transparent !important;
+}
+
 /* Ensure product info container is transparent */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__info {
     background-color: transparent !important;
@@ -27,6 +36,17 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
     font-weight: 700 !important;
+}
+
+/* Product price */
+.ec-size .ec-store .grid-product__price {
+    font-family: 'Space Mono', monospace !important;
+    font-weight: var(--typography-primary-font-weight) !important;
+    font-size: 11px !important;
+    text-align: center !important;
+    margin-top: -5px !important;
+    color: var(--color-text) !important;
+    background-color: transparent !important;
 }
 
 /* Force transparent background for all containers */
@@ -105,6 +125,123 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 30px !important;
     margin-bottom: 20px !important;
+}
+
+/* Checkout Color Fixes for Vision'97 */
+
+/* Replace Ecwid default blue (#00e) with a more suitable color for gray background */
+
+/* Links, buttons, and interactive elements */
+html#ecwid_html body#ecwid_body .ec-size .ec-store a,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link {
+    color: #333333 !important; /* Darker gray instead of blue */
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store a:hover,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link:hover {
+    color: #000000 !important; /* Black on hover */
+    text-decoration: underline !important;
+}
+
+/* Selection states and focus outlines */
+html#ecwid_html body#ecwid_body .ec-size .ec-store :focus,
+html#ecwid_html body#ecwid_body .ec-size .ec-store :active {
+    outline-color: #333333 !important; /* Darker gray for focus states */
+}
+
+/* Checkbox and radio button checked states */
+html#ecwid_html body#ecwid_body .ec-size .ec-store input:checked + .form-control__checkbox-icon,
+html#ecwid_html body#ecwid_body .ec-size .ec-store input:checked + .form-control__radio-icon {
+    background-color: #333333 !important; /* Darker gray instead of blue */
+    border-color: #333333 !important;
+}
+
+/* Selected items in dropdowns */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__select-option.form-control__select-option--active {
+    background-color: #333333 !important; /* Darker gray instead of blue */
+    color: #ffffff !important;
+}
+
+/* Progress indicators and status markers */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__icon--done,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-breadcrumbs__link--active {
+    color: #333333 !important; /* Darker gray instead of blue */
+}
+
+/* Primary buttons and CTAs - make black to match site aesthetic */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__button--primary {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__button--primary:hover {
+    opacity: 0.9 !important;
+}
+
+/* Secondary buttons */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__button--secondary {
+    background-color: transparent !important;
+    border-color: #333333 !important;
+    color: #333333 !important;
+}
+
+/* Loading indicators and spinners */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-loading-spinner__inner {
+    border-color: #333333 !important; /* Darker gray instead of blue */
+}
+
+/* Selected payment method */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__payment-method--selected {
+    border-color: #333333 !important; /* Darker gray instead of blue */
+}
+
+/* Current step in checkout */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__current .ec-cart-step__title {
+    color: #000000 !important; /* Black for current step */
+    font-weight: bold !important;
+}
+
+/* Cart quantity badges and notification dots */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__badge {
+    background-color: #000000 !important; /* Black instead of blue */
+    color: #ffffff !important;
+}
+
+/* Any other blue elements */
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color: #00e"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color:#00e"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color: rgb(0, 0, 238)"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color:rgb(0, 0, 238)"] {
+    color: #333333 !important; /* Darker gray instead of blue */
+}
+
+/* Any other blue backgrounds */
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color: #00e"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color:#00e"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color: rgb(0, 0, 238)"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color:rgb(0, 0, 238)"] {
+    background-color: #333333 !important; /* Darker gray instead of blue */
+}
+
+/* Any blue borders */
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color: #00e"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color:#00e"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color: rgb(0, 0, 238)"],
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color:rgb(0, 0, 238)"] {
+    border-color: #333333 !important; /* Darker gray instead of blue */
+}
+
+/* Success indicators */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__icon--success,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-confirmation__icon {
+    color: #000000 !important; /* Black instead of green */
+}
+
+/* Error states - keep red but darken for better contrast */
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control--invalid,
+html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__error {
+    color: #990000 !important; /* Darker red for better contrast */
 }
 
 /* Mobile adjustments */

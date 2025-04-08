@@ -21,14 +21,12 @@
             color: #000000 !important;
             background-color: transparent !important;
             font-family: 'Space Mono', monospace !important;
-            font-weight: 700 !important;
         }
         
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount {
             color: #000000 !important;
             background-color: transparent !important;
             font-family: 'Space Mono', monospace !important;
-            font-weight: 700 !important;
         }
         
         /* Force transparent background for containers */
@@ -36,16 +34,7 @@
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products,
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__wrap,
         html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__content,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__info,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__body,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__container,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__title,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__form,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-form,
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__footer {
+        html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__content {
             background-color: transparent !important;
         }
         
@@ -59,34 +48,15 @@
         html#ecwid_html body#ecwid_body .ec-size .ec-store * {
             font-family: 'Space Mono', monospace !important;
         }
-        
-        /* Product image styling to match original */
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
-            background-color: var(--color-text) !important;
-            border-radius: 10px !important;
-            margin-bottom: 15px !important;
-        }
-        
-        /* Grid layout to match original */
-        html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
-            grid-template-columns: repeat(3, 1fr) !important;
-            grid-gap: 30px !important;
-            margin-bottom: 20px !important;
-        }
-        
-        @media only screen and (max-width: 768px) {
-            html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
-                grid-template-columns: 1fr !important;
-            }
-        }
     </style>
-    <title>Vision'97</title>
+    <title>Store — Vision'97</title>
 </head>
 <body>
     <div class="mobile-menu" id="mob-menu">
         <div class="mobile-menu-inner">
             <ul>
                 <li><a href="vision97.vercel.app">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
                 <li><a href="information.html">INFORMATION</a></li>
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
                 <li><a href="subscribe.html">SUBSCRIBE</a></li>
@@ -101,7 +71,7 @@
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
             </i>
-            <a href="#">
+            <a href="index.html">
                 <img src="images/Vision97LogoW.svg" alt="" width="200px">
             </a>
 
@@ -117,7 +87,7 @@
             </div>
 
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="images/Vision97LogoW.svg" alt="" width="200px">
                 </a>
             </div>
@@ -153,54 +123,5 @@
         
 <!-- SCRIPTS -->
     <script src="scripts/mobile-menu_bag.js"></script>
-    
-    <!-- Initialize Ecwid -->
-    <script type="text/javascript">
-        // Initialize Ecwid
-        if (typeof Ecwid != 'undefined') {
-            Ecwid.init();
-        }
-        
-        // Global cart opening function
-        function showEcwidCart() {
-            if (typeof Ecwid !== 'undefined') {
-                Ecwid.openPage('cart');
-            } else {
-                console.log("Ecwid not loaded yet");
-            }
-        }
-        
-        // Initialize cart counter
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof Ecwid !== 'undefined') {
-                Ecwid.OnAPILoaded.add(function() {
-                    // Update cart count initially
-                    updateCartCount();
-                    
-                    // Update cart count when changed
-                    Ecwid.OnCartChanged.add(function(cart) {
-                        updateCartCount();
-                    });
-                });
-            }
-        });
-        
-        // Update cart count function
-        function updateCartCount() {
-            Ecwid.Cart.get(function(cart) {
-                const bagLinks = document.querySelectorAll('.bag-link');
-                
-                if (cart && cart.productsQuantity > 0) {
-                    bagLinks.forEach(link => {
-                        link.textContent = `BAG (${cart.productsQuantity})`;
-                    });
-                } else {
-                    bagLinks.forEach(link => {
-                        link.textContent = 'BAG';
-                    });
-                }
-            });
-        }
-    </script>
 </body>
 </html>
