@@ -115,7 +115,7 @@
 
 
     }
-    
+
     .product-image {
         background-color: var(--color-text);
         border-radius: 10px;
@@ -175,7 +175,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: left;
         padding: 7em 0;
     }
     
