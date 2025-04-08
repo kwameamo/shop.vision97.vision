@@ -48,7 +48,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
     font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-primary-font-weight) !important;
     font-size: 11px !important;
-    text-align: center !important;
+    text-align: left !important;
     margin-top: -5px !important;
     color: var(--color-text) !important;
     background-color: transparent !important;
@@ -135,11 +135,11 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store * {
 }
 
 /* Grid layout */
-/* html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 30px !important;
     margin-bottom: 20px !important;
-} */
+}
 
 /* Product grid */
 .ec-size .ec-store .grid-product__wrap-inner {
