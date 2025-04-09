@@ -1,0 +1,129 @@
+/* Marquee styling */
+.marquee-container {
+    margin-top: 100px;
+    overflow: hidden;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    gap: 20px;
+}
+
+.marquee.reverse {
+    animation: marquee-reverse 25s linear infinite;
+    margin-top: 20px;
+}
+
+.marquee-item {
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.marquee-item:hover {
+    transform: scale(1.05);
+}
+
+.marquee-item img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Lightbox styling */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .desktop-header {
+        padding: 1em 2em;
+    }
+
+    .marquee-item img {
+        height: 150px;
+    }
+
+    .prev, .next {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
