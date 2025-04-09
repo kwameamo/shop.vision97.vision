@@ -178,7 +178,7 @@
         text-align: left;
         line-height: 15px;
         padding: 9em 0 7em 0;         /* Increased top padding */
-        width: 85%;                   /* Set width for container */
+        width: 65%;                   /* Set width for container */
         margin: 0 auto;               /* Center the wrapper */
     }
     
@@ -190,6 +190,10 @@
     .info-wrapper a, .sub-wrapper a {
         color: var(--color-text);
         text-decoration: none;
+    }
+
+    .mc_embed_shell {
+        width: 65%; 
     }
 
     .subscribe-two {
