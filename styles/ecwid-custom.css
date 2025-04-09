@@ -9,7 +9,7 @@
 
 /* Product titles - force high contrast */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
-    color: #fafae5 !important;
+    color: #999caa !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
     font-weight: 400 !important;
@@ -20,7 +20,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
 .ec-size .ec-store .grid-product__title-inner {
     font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-text-font-weight) !important;
-    color: #fafae5 !important;
+    color: #999caa !important;
     text-align: left !important;
     background-color: transparent !important;
     font-weight: 400 !important;
@@ -39,7 +39,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__info {
 /* Product prices - force high contrast */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
-    color: #fafae5 !important;
+    color: #999caa !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
     font-weight: 400 !important;
@@ -50,7 +50,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
 .ec-size .ec-store .grid-product__price {
     font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-text-font-weight) !important;
-    color: #fafae5 !important;
+    color: #999caa !important;
     text-align: left !important;
     background-color: transparent !important;
     font-weight: 400 !important;
@@ -97,7 +97,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__input,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__select,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__textarea {
     background-color: rgba(255, 255, 255, 0.7) !important;
-    border: 1px solid #fafae5 !important;
+    border: 1px solid #999caa !important;
     font-family: 'Space Mono', monospace !important;
 }
 
@@ -106,13 +106,13 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item__wrap,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item__title {
     background-color: transparent !important;
-    color: #fafae5 !important;
+    color: #999caa !important;
 }
 
 /* Ensure all text is high contrast against gray background */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-text,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-heading {
-    color: #fafae5 !important;
+    color: #999caa !important;
 }
 
 /* Force Space Mono on all text elements */
@@ -289,13 +289,13 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__error {
 }
 
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
-    color: #fafae5 !important;
+    color: #999caa !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
 }
 
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount {
-    color: #fafae5 !important;
+    color: #999caa !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
 }
