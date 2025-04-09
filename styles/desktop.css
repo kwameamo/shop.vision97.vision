@@ -180,8 +180,6 @@
  
    .subscribe-two .sub-form form input[type=email], .sub-form form input[type=text] {
        background-color: transparent;
-       /* border: solid 2px var(--color-text); */
-       /* border-radius: 10px; */
        outline: none;
        color: #222328;
        padding: 0 .5em;
