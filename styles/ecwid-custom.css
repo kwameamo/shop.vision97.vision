@@ -9,7 +9,7 @@
 
 /* Product titles - force high contrast */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
-    color: #000000 !important;
+    color: #fafae5 !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
     font-weight: 400 !important;
@@ -97,7 +97,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__input,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__select,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__textarea {
     background-color: rgba(255, 255, 255, 0.7) !important;
-    border: 1px solid #000000 !important;
+    border: 1px solid #fafae5 !important;
     font-family: 'Space Mono', monospace !important;
 }
 
@@ -263,7 +263,8 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color:rgb(0, 0, 238)
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color: #00e"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color:#00e"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color: rgb(0, 0, 238)"],
-html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color:rgb(0, 0, 238)"] {
+html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color:rgb(0, 0, 238)"],
+.form-control__inline-label {
     background-color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
