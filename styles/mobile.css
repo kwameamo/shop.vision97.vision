@@ -192,9 +192,22 @@
         text-decoration: none;
     }
 
-    .mc_embed_shell {
-        width: 65%; 
-    }
+    #mc_embed_shell {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+      }
+      
+      #mc_embed_signup {
+        background: transparent;
+        font: 10px 'Space Mono', monospace;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+      }
 
     .subscribe-two {
         display: flex;
