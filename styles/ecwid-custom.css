@@ -20,7 +20,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
 .ec-size .ec-store .grid-product__title-inner {
     font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-text-font-weight) !important;
-    color: var(--color-text) !important;
+    color: #fafae5 !important;
     text-align: left !important;
     background-color: transparent !important;
     font-weight: 400 !important;
@@ -39,7 +39,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__info {
 /* Product prices - force high contrast */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
-    color: #000000 !important;
+    color: #fafae5 !important;
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
     font-weight: 400 !important;
@@ -50,7 +50,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
 .ec-size .ec-store .grid-product__price {
     font-family: 'Space Mono', monospace !important;
     font-weight: var(--typography-text-font-weight) !important;
-    color: var(--color-text) !important;
+    color: #fafae5 !important;
     text-align: left !important;
     background-color: transparent !important;
     font-weight: 400 !important;
@@ -106,13 +106,13 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item__wrap,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-item__title {
     background-color: transparent !important;
-    color: #000000 !important;
+    color: #fafae5 !important;
 }
 
 /* Ensure all text is high contrast against gray background */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-text,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-heading {
-    color: #000000 !important;
+    color: #fafae5 !important;
 }
 
 /* Force Space Mono on all text elements */
@@ -170,51 +170,51 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store a,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__select,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-shopping .ec-link {
-    color: #333333 !important; /* Darker gray instead of blue */
+    color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
 html#ecwid_html body#ecwid_body .ec-size .ec-store a:hover,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link:hover {
-    color: #000000 !important; /* Black on hover */
+    color: #5a5bd3 !important; /* Black on hover */
     text-decoration: underline !important;
 }
 
 /* Selection states and focus outlines */
 html#ecwid_html body#ecwid_body .ec-size .ec-store :focus,
 html#ecwid_html body#ecwid_body .ec-size .ec-store :active {
-    outline-color: #333333 !important; /* Darker gray for focus states */
+    outline-color: #5a5bd3 !important; /* Darker gray for focus states */
 }
 
 /* Checkbox and radio button checked states */
 html#ecwid_html body#ecwid_body .ec-size .ec-store input:checked + .form-control__checkbox-icon,
 html#ecwid_html body#ecwid_body .ec-size .ec-store input:checked + .form-control__radio-icon {
-    background-color: #333333 !important; /* Darker gray instead of blue */
-    border-color: #333333 !important;
+    background-color: #5a5bd3 !important; /* Darker gray instead of blue */
+    border-color: #5a5bd3 !important;
 }
 
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__text, html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__textarea,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__checkbox-wrap,
 html#ecwid_html body#ecwid_body .ec-size .ec-store {
-    border-color: #333333 !important;
+    border-color: #5a5bd3 !important;
 
 }
 
 /* Selected items in dropdowns */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__select-option.form-control__select-option--active {
-    background-color: #333333 !important; /* Darker gray instead of blue */
+    background-color: #5a5bd3 !important; /* Darker gray instead of blue */
     color: #ffffff !important;
 }
 
 /* Progress indicators and status markers */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__icon--done,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-breadcrumbs__link--active {
-    color: #333333 !important; /* Darker gray instead of blue */
+    color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
 /* Primary buttons and CTAs - make black to match site aesthetic */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__button--primary {
-    background-color: #000000 !important;
-    border-color: #000000 !important;
+    background-color: #5a5bd3 !important;
+    border-color: #5a5bd3 !important;
     color: #ffffff !important;
 }
 
@@ -225,18 +225,18 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__button--primar
 /* Secondary buttons */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__button--secondary {
     background-color: transparent !important;
-    border-color: #333333 !important;
-    color: #333333 !important;
+    border-color: #5a5bd3 !important;
+    color: #5a5bd3 !important;
 }
 
 /* Loading indicators and spinners */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-loading-spinner__inner {
-    border-color: #333333 !important; /* Darker gray instead of blue */
+    border-color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
 /* Selected payment method */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__payment-method--selected {
-    border-color: #333333 !important; /* Darker gray instead of blue */
+    border-color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
 /* Current step in checkout */
@@ -247,8 +247,8 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart-step__current .ec-ca
 
 /* Cart quantity badges and notification dots */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__badge {
-    background-color: #000000 !important; /* Black instead of blue */
-    color: #ffffff !important;
+    background-color: #222328 !important; /* Black instead of blue */
+    color: #4f515a !important;
 }
 
 /* Any other blue elements */
@@ -256,7 +256,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color: #00e"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color:#00e"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color: rgb(0, 0, 238)"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="color:rgb(0, 0, 238)"] {
-    color: #333333 !important; /* Darker gray instead of blue */
+    color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
 /* Any other blue backgrounds */
@@ -264,7 +264,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color: #0
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color:#00e"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color: rgb(0, 0, 238)"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="background-color:rgb(0, 0, 238)"] {
-    background-color: #333333 !important; /* Darker gray instead of blue */
+    background-color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
 /* Any blue borders */
@@ -272,13 +272,13 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color: #00e"]
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color:#00e"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color: rgb(0, 0, 238)"],
 html#ecwid_html body#ecwid_body .ec-size .ec-store [style*="border-color:rgb(0, 0, 238)"] {
-    border-color: #333333 !important; /* Darker gray instead of blue */
+    border-color: #5a5bd3 !important; /* Darker gray instead of blue */
 }
 
 /* Success indicators */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__icon--success,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-confirmation__icon {
-    color: #000000 !important; /* Black instead of green */
+    color: #5a5bd3 !important; /* Black instead of green */
 }
 
 /* Error states - keep red but darken for better contrast */
