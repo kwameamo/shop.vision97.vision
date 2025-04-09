@@ -59,6 +59,10 @@ body, button, input, select, textarea {
     user-select: none;
 }
 
+img.refferal_badge {
+    visibility: hidden;
+}
+
 /* Text transforms for menus */
 .left-menu a, .right-menu a, .mobile-menu a {
     text-transform: uppercase;
