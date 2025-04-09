@@ -48,7 +48,7 @@
     .menu-line {
         width: 20px;
         height: 3px;
-        background-color: black;
+        background-color: #999caa;
     }
 
     .mobile-menu {
@@ -397,7 +397,7 @@
 
         padding: 2em 3em;
 
-        color: var(--color-primary);
+        color: #999caa;
 
         z-index: 25;
     }
