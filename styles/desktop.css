@@ -274,7 +274,7 @@
        justify-content: space-between;
        text-align: center;
        padding: 1em 1em;
-       color: var(--color-primary);
+       color: #999caa;
        z-index: 25;
    }
  
