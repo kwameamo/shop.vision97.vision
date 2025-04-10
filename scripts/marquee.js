@@ -1,14 +1,12 @@
 const imagePaths = [
-    "images/2023_1st_Qtr/1.png", // Photo 1
-    "images/2023_1st_Qtr/2.png", // Photo 2
-    "images/2023_1st_Qtr/3.png", // Photo 3
-    "images/2023_1st_Qtr/4.png", // Photo 4
-    "images/2023_1st_Qtr/5.png", // Photo 5
-    "images/2023_1st_Qtr/6.png", // Photo 6
-    "images/2023_1st_Qtr/7.png", // Photo 7
-    "images/2023_1st_Qtr/Circle-1.png", // Circle 1
-    "images/2023_1st_Qtr/Circle-2.png", // Circle 2
-    "images/2023_1st_Qtr/Rectangle-1.png"  // Rectangle 1
+    "images/war/1.jpeg", // Photo 1
+    "images/war/2.jpeg", // Photo 2
+    "images/war/3.jpeg", // Photo 3
+    "images/war/4.jpeg", // Photo 4
+    "images/war/5.jpeg", // Photo 5
+    "images/war/6.jpeg", // Photo 6
+    "images/war/7.jpeg", // Photo 7
+    "images/war/8.jpeg", // Photo 8
 ];
 
 let currentImageIndex = 0;
