@@ -146,22 +146,6 @@
         text-decoration: none;
     }
 
-    .about {
-        position: relative;
-        padding: 2em;
-        max-width: 800px;
-        margin: 0 auto;
-        border-left: 3px solid #000;
-        background: linear-gradient(to right, rgba(141, 141, 141, 0.1), transparent 80%);
-        transition: all 0.5s ease;
-    }
-    
-    .about:hover {
-        border-left-width: 5px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        transform: translateY(-3px);
-    }
-
     .vision-text {
         position: relative;
         transition: transform 0.3s ease, opacity 0.3s ease;
