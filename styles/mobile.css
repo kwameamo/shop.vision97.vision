@@ -192,6 +192,15 @@
         text-decoration: none;
     }
 
+    .about {
+      padding: 1em;
+    }
+    
+    .vision-quote::before,
+    .vision-quote::after {
+        display: none;
+    }
+
     #mc_embed_shell {
         width: 100% !important;
         max-width: 100% !important;
