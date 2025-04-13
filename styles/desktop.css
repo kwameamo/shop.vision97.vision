@@ -154,36 +154,6 @@
     .vision-text:hover {
         transform: translateX(10px);
     }
-
-    .animated-word {
-        font-weight: bold;
-        position: relative;
-        display: inline-block;
-        transition: all 0.3s ease;
-    }
-
-    .animated-word:hover {
-        color: #8d8d8d;
-        transform: scale(1.1);
-    }
-
-    .animated-word::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: #000;
-        bottom: -2px;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.3s ease;
-    }
-
-    .animated-word:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
     
    .subscribe-two {
        display: flex;
