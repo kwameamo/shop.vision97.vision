@@ -193,12 +193,12 @@
     }
 
     .about {
-      padding: 1em;
+      padding: 1em 1em 1em 1.5em;
+      border-left-width: 2px;
     }
     
-    .vision-quote::before,
-    .vision-quote::after {
-        display: none;
+    .about:hover {
+        border-left-width: 4px;
     }
 
     #mc_embed_shell {
