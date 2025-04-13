@@ -162,10 +162,10 @@
         left: 0;
         right: 0;
         bottom: 0;
-        border: 2px solid #5a5bd3;
+        border: 3px solid #ffba00;
         border-radius: 4px;
         z-index: -1;
-        animation: borderFlash 3s infinite;
+        animation: borderFlash 2s infinite;
     }
     
     @keyframes borderFlash {
@@ -177,48 +177,6 @@
         }
     }
     
-    /* Second animated border - rotating dashed line */
-    .about::after {
-        content: '';
-        position: absolute;
-        top: -5px;
-        left: -5px;
-        right: -5px;
-        bottom: -5px;
-        border: 1px dashed #5a5bd3;
-        border-radius: 8px;
-        z-index: -2;
-        animation: dashRotate 10s linear infinite;
-    }
-    
-    @keyframes dashRotate {
-        0% {
-            border-style: dashed;
-            border-color: transparent;
-            border-top-color: #5a5bd3;
-        }
-        25% {
-            border-style: dashed;
-            border-color: transparent;
-            border-right-color: #5a5bd3;
-        }
-        50% {
-            border-style: dashed;
-            border-color: transparent;
-            border-bottom-color: #5a5bd3;
-        }
-        75% {
-            border-style: dashed;
-            border-color: transparent;
-            border-left-color: #5a5bd3;
-        }
-        100% {
-            border-style: dashed;
-            border-color: transparent;
-            border-top-color: #5a5bd3;
-        }
-    }
-
     .vision-text {
         position: relative;
         transition: transform 0.3s ease, opacity 0.3s ease;
