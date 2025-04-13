@@ -192,15 +192,6 @@
         text-decoration: none;
     }
 
-    .about {
-      padding: 1em 1em 1em 1.5em;
-      border-left-width: 2px;
-    }
-    
-    .about:hover {
-        border-left-width: 4px;
-    }
-
     #mc_embed_shell {
         width: 100% !important;
         max-width: 100% !important;
