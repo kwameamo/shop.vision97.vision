@@ -73,46 +73,15 @@ document.querySelectorAll('.marquee').forEach(marquee => {
 
 
 
-// Parallax effect for background elements
-    document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
         const about = document.getElementById('about-section');
-        const parallaxElements = document.querySelectorAll('.parallax-element');
         
         // Only initialize if the about section exists
         if (about) {
-            // Create subtle animation for elements on page load
-            parallaxElements.forEach((element, index) => {
-                setTimeout(() => {
-                    element.style.opacity = '0.15';
-                    element.style.transform = 'scale(1.02)';
-                }, index * 200);
-            });
-            
-            // Add parallax effect on mouse move
-            about.addEventListener('mousemove', function(e) {
-                const aboutRect = about.getBoundingClientRect();
-                const mouseX = e.clientX - aboutRect.left;
-                const mouseY = e.clientY - aboutRect.top;
-                
-                const centerX = aboutRect.width / 2;
-                const centerY = aboutRect.height / 2;
-                
-                const moveX = (mouseX - centerX) / 30;
-                const moveY = (mouseY - centerY) / 30;
-                
-                parallaxElements.forEach((element, index) => {
-                    const factor = (index + 1) * 0.5;
-                    element.style.transform = `translate(${moveX * factor}px, ${moveY * factor}px) scale(1.02)`;
-                });
-            });
-            
-            // Reset elements when mouse leaves
-            about.addEventListener('mouseleave', function() {
-                parallaxElements.forEach(element => {
-                    element.style.transform = 'scale(1.02)';
-                    element.style.transition = 'transform 0.8s ease';
-                });
-            });
+            // Create subtle animation for the about section on load
+            setTimeout(() => {
+                about.style.opacity = '1';
+            }, 300);
             
             // Text animation
             const animatedWords = document.querySelectorAll('.animated-word');
