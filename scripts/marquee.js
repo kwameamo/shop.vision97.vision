@@ -70,29 +70,3 @@ document.querySelectorAll('.marquee').forEach(marquee => {
     });
 });
 
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-        const about = document.getElementById('about-section');
-        
-        // Only initialize if the about section exists
-        if (about) {
-            // Create subtle animation for the about section on load
-            setTimeout(() => {
-                about.style.opacity = '1';
-            }, 300);
-            
-            // Text animation
-            const animatedWords = document.querySelectorAll('.animated-word');
-            animatedWords.forEach(word => {
-                word.addEventListener('mouseenter', function() {
-                    this.style.textShadow = '0 0 8px rgba(0,0,0,0.3)';
-                });
-                
-                word.addEventListener('mouseleave', function() {
-                    this.style.textShadow = 'none';
-                });
-            });
-        }
-    });
