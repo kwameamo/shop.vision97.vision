@@ -151,8 +151,15 @@
         padding: 2em;
         max-width: 800px;
         margin: 0 auto;
-        overflow: hidden;
+        border-left: 3px solid #000;
+        background: linear-gradient(to right, rgba(141, 141, 141, 0.1), transparent 80%);
         transition: all 0.5s ease;
+    }
+    
+    .about:hover {
+        border-left-width: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transform: translateY(-3px);
     }
 
     .vision-text {
@@ -192,89 +199,6 @@
     .animated-word:hover::after {
         transform: scaleX(1);
         transform-origin: left;
-    }
-
-    .vision-quote {
-        position: relative;
-        text-align: center;
-        font-style: italic;
-        margin-top: 2em;
-        transform: scale(0.95);
-        transition: transform 0.5s ease;
-    }
-
-    .vision-quote:hover {
-        transform: scale(1);
-    }
-
-    .vision-quote::before,
-    .vision-quote::after {
-        content: '';
-        position: absolute;
-        width: 50px;
-        height: 2px;
-        background: #000;
-        top: 50%;
-        transition: width 0.3s ease;
-    }
-
-    .vision-quote::before {
-        left: 25%;
-        transform: translateX(-100%);
-    }
-
-    .vision-quote::after {
-        right: 25%;
-        transform: translateX(100%);
-    }
-
-    .vision-quote:hover::before,
-    .vision-quote:hover::after {
-        width: 80px;
-    }
-
-    /* Parallax elements */
-    .vision-parallax {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: -1;
-    }
-
-    .parallax-element {
-        position: absolute;
-        border-radius: 50%;
-        opacity: 0.1;
-        transition: all 0.3s ease;
-    }
-
-    #circle-1 {
-        width: 200px;
-        height: 200px;
-        background: #000;
-        top: 20%;
-        left: 10%;
-    }
-
-    #circle-2 {
-        width: 150px;
-        height: 150px;
-        background: #000;
-        bottom: 30%;
-        right: 15%;
-    }
-
-    #rectangle-1 {
-        width: 250px;
-        height: 100px;
-        background: #000;
-        border-radius: 10px;
-        top: 60%;
-        left: 30%;
-        transform: rotate(15deg);
     }
     
    .subscribe-two {
