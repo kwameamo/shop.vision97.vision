@@ -14,16 +14,21 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 
 
-Options +FollowSymLinks
+Options +FollowSymLinks -MultiViews
 RewriteEngine On
+RewriteBase /
 
-# Serve index.html without showing it
-DirectoryIndex index.html
-
-# Redirect index.html to root
-RewriteCond %{THE_REQUEST} /index\.html [NC]
+# Redirect /index.html to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.html [NC]
 RewriteRule ^index\.html$ / [R=301,L]
 
-# Remove .html from URLs
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^/]+)$ $1.html [L]
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Internally rewrite URLs without .html to actual .html files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.html [L]
+
