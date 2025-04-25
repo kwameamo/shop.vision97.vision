@@ -809,36 +809,40 @@ img.refferal_badge {
         z-index: 1;
     }
     
-    /* First animated border - simple pulsing */
-    .about::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border: 3px solid var(--color-accent1); 
-        border-radius: 4px;
-        z-index: -1;
-        animation: borderFlash 2s infinite;
+    .about-title {
+        background-color: var(--color-text);
+        color: var(--color-secondary);
+        padding: 0.5em 1em;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto 1.5em auto;
+        border-radius: 5px;
     }
     
-    @keyframes borderFlash {
-        0%, 100% {
-            opacity: 0.3;
-        }
-        50% {
-            opacity: 1;
-        }
-    }
-    
-    .vision-text {
+    .about-content {
         position: relative;
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        border: 2px solid var(--color-text);
+        padding: 1.5em 1em 1em 1em;
+        margin-top: 1.5em;
+        border-radius: 5px;
+    }
+    
+    .about-label {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--color-secondary);
+        padding: 0 10px;
+        font-weight: bold;
+    }
+    
+    .about-text {
+        text-align: center;
     }
 
-    .vision-text:hover {
-        transform: translateX(10px);
+    .about-text p {
+        margin-bottom: 1em;
     }
     
    .subscribe-two {
