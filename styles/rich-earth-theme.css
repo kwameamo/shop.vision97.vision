@@ -1376,3 +1376,7 @@ body::before {
 .left-menu a:hover::after, .right-menu a:hover::after {
     width: 100%;
 }
+
+#REQ_CSS valid{
+    color: var(--color-primary) !important;
+}
