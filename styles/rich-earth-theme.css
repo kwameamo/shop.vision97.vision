@@ -430,6 +430,10 @@ img.refferal_badge {
         box-sizing: border-box !important;
       }
 
+      #mc_embed_signup .mc-field-group input {
+        color: var(--color-primary) !important;
+      }
+
     .subscribe-two {
         display: flex;
         flex-direction: column;
