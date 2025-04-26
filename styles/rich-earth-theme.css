@@ -1151,6 +1151,11 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__body,
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-cart__body-inner {
     background-color: transparent !important;
 }
+    /* Pop-up Cart Container */
+    html#ecwid_html body#ecwid_body div.ecwid-popup-content {
+        background-color: var(--color-primary) !important;
+        color: var(--color-text) !important;
+    }
 
 /* Form elements */
 html#ecwid_html body#ecwid_body .ec-size .ec-store .form-control__input,
