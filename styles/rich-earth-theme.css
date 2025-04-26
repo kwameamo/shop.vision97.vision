@@ -633,7 +633,7 @@ img.refferal_badge {
     }
 
     footer a {
-        color: var(--color-text);
+        color: var(--color-text) !important;
     }
     
     /* Ecwid store specific mobile adjustments */
@@ -1019,7 +1019,7 @@ img.refferal_badge {
        font-size: 2.5em;
        line-height: 1.5em;
        text-decoration: none;
-       color: var(--color-text);
+       color: var(--color-text) !important;
        transition: color 0.3s ease;
    }
    
