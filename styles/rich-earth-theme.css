@@ -367,7 +367,7 @@ img.refferal_badge {
         align-items: flex-start;
         text-align: left;
         line-height: 15px;
-        padding: 9em 0 7em 0;
+        padding: 4em 0 7em 0;
         width: 80%;
         margin: 0 auto;
     }
@@ -799,7 +799,7 @@ img.refferal_badge {
        display: block;
        text-align: left;
        line-height: 15px;
-       padding: 9em 0 7em 0;
+       padding: 2em 0 7em 0;
        width: 650px;
        margin: 0 auto;
     }
