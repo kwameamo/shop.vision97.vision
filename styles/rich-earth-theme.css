@@ -629,6 +629,7 @@ img.refferal_badge {
     footer p {
         font-size: 13.75px;
         line-height: 1.5em;
+        text-align: center;
     }
 
     footer a {
