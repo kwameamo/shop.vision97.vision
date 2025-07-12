@@ -1114,6 +1114,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
     text-align: left !important;
     background-color: transparent !important;
     font-weight: 400 !important;
+    font-size: 18px;
 }
 
 /* Force transparent background for all containers */
