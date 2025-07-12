@@ -1408,3 +1408,202 @@ body::before {
 #REQ_CSS valid{
     color: var(--color-primary) !important;
 }
+
+
+<!-- Audio Player CSS -->
+    .audio-player-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .audio-player {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        min-width: 280px;
+        transform: translateY(0);
+    }
+
+    .audio-player.minimized {
+        min-width: auto;
+        padding: 12px;
+    }
+
+    .audio-player.minimized .player-content {
+        display: none;
+    }
+
+    .audio-player.minimized .player-header {
+        margin-bottom: 0;
+    }
+
+    .player-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    .player-title {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        letter-spacing: -0.01em;
+    }
+
+    .minimize-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .minimize-btn:hover {
+        background: rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .minimize-btn svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+    }
+
+    .track-info {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .track-title {
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0 0 4px 0;
+        line-height: 1.3;
+    }
+
+    .track-artist {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 11px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.3;
+    }
+
+    .controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .play-pause-btn {
+        background: rgba(0, 0, 0, 0.8);
+        border: none;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .play-pause-btn:hover {
+        background: rgba(0, 0, 0, 0.9);
+        transform: scale(1.05);
+    }
+
+    .play-pause-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+
+    .volume-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .volume-btn:hover {
+        background: rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .volume-btn svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+    }
+
+    .progress-container {
+        margin-bottom: 12px;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 4px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+        border-radius: 2px;
+        width: 0%;
+        transition: width 0.1s ease;
+    }
+
+    .time-display {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .audio-player-container {
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .audio-player {
+            min-width: 260px;
+            padding: 14px;
+        }
+
+        .play-pause-btn {
+            width: 44px;
+            height: 44px;
+        }
+
+        .play-pause-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
