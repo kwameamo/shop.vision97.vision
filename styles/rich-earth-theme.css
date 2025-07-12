@@ -1073,7 +1073,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
     font-weight: 400 !important;
-    font-size: 10px !important;
+    font-size: 16px !important;
 }
 
 /* Product title */
@@ -1103,7 +1103,7 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price {
     background-color: transparent !important;
     font-family: 'Space Mono', monospace !important;
     font-weight: 400 !important;
-    font-size: 10px !important;
+    font-size: 15px !important;
 }
 
 /* Product price */
