@@ -300,6 +300,10 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__price-amount {
     font-family: 'Space Mono', monospace !important;
 }
 
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-lightspeed-branding {
+    display: none;
+}
+
 /* Mobile adjustments */
 @media only screen and (max-width: 768px) {
     html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products {
