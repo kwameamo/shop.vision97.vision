@@ -127,6 +127,10 @@ html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__image-wrap {
     margin-bottom: 15px !important;
 }
 
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__picture-additional--opaque {
+    background-color: var(--color-accent3) !important;
+}
+
 /* Product images */
 /* .ec-size .ec-store .grid__products .grid-product__image-wrap {
     margin-bottom: 0 !important;
